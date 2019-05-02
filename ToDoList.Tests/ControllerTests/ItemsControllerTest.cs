@@ -7,21 +7,22 @@ using ToDoList.Models;
 namespace ToDoList.Tests
 {
   [TestClass]
-  public class HomeControllerTest
+  public class ItemsControllerTest
   {
-    [TestMethod]
-    public void Index_HasCorrectModelType_ItemList()
-    {
-      //Arrange
-      ItemController controller = new ItemController();
-      ViewResult indexView = controller.Index() as ViewResult;
+    // [TestMethod]
+    // public void Index_HasCorrectModelType_ItemList()
+    // {
+    //   //Arrange
+    //   ItemsController controller = new ItemsController();
+    //   ViewResult indexView = controller.Index() as ViewResult;
+    //
+    //   //Act
+    //   var result = indexView.ViewData.Model;
+    //
+    //   //Assert
+    //   Assert.IsInstanceOfType(result, typeof(List<Item>));
+    // }
 
-      //Act
-      var result = indexView.ViewData.Model;
-
-      //Assert
-      Assert.IsInstanceOfType(result, typeof(List<Item>));
-    }
     [TestMethod]
     public void Create_ReturnsCorrectActionType_RedirectToActionResult()
     {
