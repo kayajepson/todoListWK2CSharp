@@ -13,7 +13,7 @@ namespace ToDoList.Controllers
       return View();
     }
 
-    [HttpPost("/items/delete")]
+    [HttpPost("/item/delete")]
     public ActionResult DeleteAll()
     {
       Item.ClearAll();
